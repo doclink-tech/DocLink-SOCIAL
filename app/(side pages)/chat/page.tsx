@@ -19,7 +19,7 @@ const ChatView: React.FC = () => {
   ];
 
   return (
-    <div className="bg-gray-100 h-screen flex flex-col">
+    <div className="bg-gray-100 h-screen flex flex-col max-w-7xl mx-auto">
       {/* Header */}
       <header className="bg-white flex items-center justify-between px-4 py-3 border-b border-gray-200">
         <div className="flex items-center">
@@ -36,7 +36,7 @@ const ChatView: React.FC = () => {
         {messages.map((message) => (
           <div
             key={message.id}
-            className={`max-w-[70%] rounded-3xl p-2 my-4 ${
+            className={` max-w-[70%] lg:max-w-[30%] rounded-3xl p-2 my-4 ${
               message.isSent
                 ? 'bg-blue-500 text-white ml-auto'
                 : 'bg-white text-black'

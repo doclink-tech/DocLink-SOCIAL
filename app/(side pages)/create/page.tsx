@@ -1,4 +1,5 @@
 'use client'
+
 import { CrossIcon } from 'lucide-react';
 import React, { useState } from 'react';
 import { FaImage, FaVideo, FaPoll, FaPlus, FaTimes } from 'react-icons/fa';
@@ -16,7 +17,7 @@ const CreatePost: React.FC = () => {
   };
 
   return (
-    <div className="max-w-md mx-auto p-6 bg-white min-h-screen flex flex-col">
+    <div className="max-w-md md:max-w-2xl lg:max-w-4xl xl:max-w-6xl mx-auto p-6  min-h-screen flex flex-col bg-gray-100">
       <div className="flex justify-between items-center mb-8">
         <span className="text-2xl font-bold text-gray-800">Create Post</span>
         <button className="bg-blue-500 text-white px-4 py-2 rounded-full font-semibold hover:bg-blue-600 transition duration-300">
